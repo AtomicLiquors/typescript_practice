@@ -1,0 +1,27 @@
+/*컴파일된 .js 결과물.*/
+
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
+;
+// 컴파일 결과, 내부적으로 Enum은 객체로 관리된다. 0, 1, 2에 해당하는 숫자를 저장했다.
+
+var RoleWithValue;
+(function (RoleWithValue) {
+    RoleWithValue["ADMIN"] = "ADMIN";
+    RoleWithValue[RoleWithValue["READ_ONLY"] = 100] = "READ_ONLY";
+    RoleWithValue["AUTHOR"] = "AUTH";
+})(RoleWithValue || (RoleWithValue = {}));
+;
+// 만일 ts파일에서 Enum의 값에 숫자를 지정했다면(예컨대 5), 
+// 값을 지정하지 않은 다른 Enum 속성은 6, 7, 8 등 이어지는 숫자를 자동으로 할당받는다.
+
+var personWithEnum = {
+    name: 'Max',
+    age: 30,
+    hobbies: ['Sports', 'Cooking'],
+    role: Role.ADMIN
+};
