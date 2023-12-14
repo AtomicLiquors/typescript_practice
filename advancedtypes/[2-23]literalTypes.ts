@@ -1,17 +1,20 @@
 /* 유니언 타입과 연결되는 개념 */
 
 const lucky = 7;
-// vsc에서 위 'lucky'에 커서를 올려보면,
-// const lucky : number가 아니라
-// const lucky : 7이라고 뜬다. 
-// 타입 이름이 '7'이라는 거.
-// "lucky는 상수며, 할당된 값이 정확한 타입이라는 것을 안다!"
-
+/* 
+ * vsc에서 위 'lucky'에 커서를 올려보면,
+ * const lucky : number가 아니라
+ * const lucky : 7이라고 뜬다. 
+ * 타입 이름이 '7'이라는 거.
+ * "lucky는 상수며, 할당된 값이 정확한 타입이라는 것을 안다!"
+ */
 
 /* 문자열 활용 */
-// 아래 메서드에서 resultConversion 매개변수에는 'as-number' 또는 'as-text'가 들어갑니다.
-// 이때 아무 stirng이 들어가도 되는 게 아니라 위와 같이 지정된 문자열만 넣어주고 싶다면
-// Enum을 사용해주거나, '리터럴 타입'을 활용할 수 있는 것입니다.
+/*
+ * 아래 메서드에서 resultConversion 매개변수에는 'as-number' 또는 'as-text'가 들어갑니다.
+ * 이때 아무 stirng이 들어가도 되는 게 아니라 위와 같이 지정된 문자열만 넣어주고 싶다면
+ * Enum을 사용해주거나, '리터럴 타입'을 활용할 수 있는 것입니다.
+ */
 
 /* before */
 // function combineWithConversion(input1: number | string, input2: number | string, resultConversion: string) {
