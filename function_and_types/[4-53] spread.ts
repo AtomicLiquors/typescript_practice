@@ -1,10 +1,10 @@
 /* 사용자가 입력하는 값을 모두 Parameter로 받고 싶다. */
-
+/*
 const addMultipleVars = (...numbers) => {
     // 선언을 이렇게만 하면 매개변수 numbers의 타입은 any[]가 됩니다.
 
 };
-
+*/
 
 const addMultipleNumbers = (...numbers : number[]) => {
     numbers.reduce((curResult, curValue) => {
