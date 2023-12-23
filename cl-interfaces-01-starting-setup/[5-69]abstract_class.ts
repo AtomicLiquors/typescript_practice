@@ -70,9 +70,3 @@ class AbstAccountingDepartment extends AbstractDept {
 
 }
 
-
-const accountingDept = new AccountingDepartment('d2', []);
-accountingDept.addEmployee('Max');
-console.log(accountingDept.mostRecentReport);
-/* 메서드를 호출하듯 ()를 쓰지 않는다. 프로퍼티에 접근하듯 이름만 적는다. */
-
