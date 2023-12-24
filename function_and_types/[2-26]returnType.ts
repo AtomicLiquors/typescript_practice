@@ -1,5 +1,5 @@
 /* 리턴 타입 선언하기 */
-function add(n1: number, n2: number) : string {
+function add226(n1: number, n2: number) : string {
     return n1.toString() + n2.toString();
 }
 // 이 경우는 사실 특별한 이유가 없다면 타입스크립트 추론에 맡기는 게 더 낫습니다.

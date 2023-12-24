@@ -3,11 +3,11 @@ class DataStorageUnion {
     private data: string[] | number[] | boolean[] = [];
 
     addItem(item: string | number | boolean ){
-        this.data.push(item);
+       // this.data.push(item);
     }
 
     removeItem(item: string | number | boolean ){
-        this.data.splice(this.data.indexOf(item), 1);
+       // this.data.splice(this.data.indexOf(item), 1);
     }
 
     getItems() {
