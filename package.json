@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
+    "@types/googlemaps": "^3.43.3",
     "@types/lodash": "^4.14.202",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
