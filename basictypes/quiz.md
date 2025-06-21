@@ -11,7 +11,6 @@ const personName: string = getProperty(person, 'name');
 const personAge: number = getProperty(person, 'age');
 ```
 
-✅ 보기
 1. type GetProperty = <T>(obj: T, key: string) => T[typeof key]
 2. type GetProperty = (obj: Object, key: string) => obj[typeof key]
 3. type GetProperty = <T, K extends keyof T>(obj: T, key: K) => T[K]
@@ -20,11 +19,10 @@ const personAge: number = getProperty(person, 'age');
 
 ---
 
-✅ 정답
+### ✅ 정답
 3번 — type GetProperty = <T, K extends keyof T>(obj: T, key: K) => T[K]
 
-🧠 해설
-getProperty 함수는 주어진 객체와 키를 이용하여 해당 프로퍼티의 값을 반환합니다.
+getProperty 함수는 주어진 객체와 키를 이용하여 해당 프로퍼티의 값을 반환합니다.  
 이때 반환값의 타입이 객체의 해당 키에 대한 정확한 타입으로 추론되어야 합니다.
 
 타입 파라미터 T는 객체의 타입을, K는 T의 키 중 하나(keyof T)로 제한함으로써,   
