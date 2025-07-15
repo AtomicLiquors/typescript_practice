@@ -1,5 +1,5 @@
-ChatGPT의 말:
-Creating a custom Obsidian plugin involves using TypeScript along with Obsidian’s Plugin API. Below is a practical step-by-step guide:
+Creating a custom Obsidian plugin involves using TypeScript along with Obsidian’s Plugin API.   
+Below is a practical step-by-step guide:
 
 📦 1. Setup Environment
 Install Node.js (https://nodejs.org)
